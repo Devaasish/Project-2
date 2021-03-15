@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Navigation Bar with icons | SCS</title>
+</head>
+<body>
+    <i onclick="openNavBox();" id="cB" class="fas fa-bars"></i>
+    <div id="navBox">
+        <ul>
+            <header>My App</header><i onclick="closeNavBox();" class="fas fa-times" id="cross"></i>
+            <a id="a" href="#">Dashboard</a>
+            <a id="a" href="#">Contacts</a>
+            <a id="a" href="#">Overview</a>
+            <a id="a" href="#">Services</a>
+            <a id="b" href="#">Shortcuts</a>
+            <a id="c" href="#">Events</a>
+            <a id="d" href="#">About</a>
+            <a id="e" href="#">Notifications</a>
+            <a id="f" href="#">Tasks</a>
+            <a id="g" onclick="openDropBox();" ondblclick="closeDropBox();">More<i class="fas fa-caret-down"></i></a>
+            <div style="display: none;" id="dropBox">
+                <a style="text-align: center; margin: auto; width: inherit;" href="#">Pages</a>
+                <a style="text-align: center; margin: auto; width: inherit;" href="#">Designs</a>
+            </div>
+        </ul>
+    </div>
+</body>
+<script>
+    function openDropBox() {
+        var dBox = document.getElementById("dropBox");
+        dBox.style.display = "block";
+    }
+
+    function closeDropBox() {
+        var dBox = document.getElementById("dropBox");
+        dBox.style.display = "none";
+    }
+
+    function closeNavBox() {
+        var nBox = document.getElementById("navBox");
+        var classBars = document.getElementById("cB");
+        nBox.style.display = "none";
+        classBars.style.display = "block";
+    }
+
+    function openNavBox() {
+        var nBox = document.getElementById("navBox");
+        var classBars = document.getElementById("cB");
+        nBox.style.display = "block";
+        classBars.style.display = "none";
+    }
+</script>
+</html>

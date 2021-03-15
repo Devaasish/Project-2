@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Poppins';
+}
+
+body {
+    background-image: url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+#cB {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#navBox {
+    display: none;
+    width: 318px;
+    height: 70pc;
+    background-color: #222;
+    overflow-y: scroll;
+    transition: all 1s step-end;
+}
+
+#navBox header {
+    color: #3666eb;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    user-select: none;
+    background-color: #063146;
+}
+
+#navBox #cross{
+    z-index: 1111;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    font-size: 30px;
+    color: #0a5275;
+    background-color: #000;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+#navBox ul a{
+    display: block;
+    font-size: x-large;
+    width: inherit;
+    background-color: 042331;
+    color: #fff;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: all 1s ease;
+}
+
+#navBox ul a:hover{
+    background-color: rgb(50, 42, 165);
+    width: inherit;
+}
+
+#a {
+    padding: 10px 124px 10px 15px;
+}
+
+#b {
+    padding: 10px 141px 10px 15px;
+}
+
+#c {
+    padding: 10px 181px 10px 15px;
+}
+
+#d {
+    padding: 10px 183px 10px 15px;
+}
+
+#e {
+    padding: 10px 109px 10px 15px;
+}
+
+#f {
+    padding: 10px 189px 10px 15px;
+}
+
+#h {
+    padding: 10px 261px 10px 15px;
+}
+
+#g {
+    padding: 10px 210px 10px 15px;
+    text-align: center;
+    cursor: pointer;
+}
